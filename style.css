@@ -3,23 +3,21 @@ body {
 }
 
 h1 {
-    text-align: center
+    text-align: center;
+    color: purple;
 }
 
 h2 {
-    text-align: center
+    text-align: center;
+    text-decoration: underline;
+    color: palevioletred;
+    font-family: "Brush Script MT";
+    font-size: 2em;
 }
 
 p {
     text-align: center;
     font-family: "Times New Roman", Times, serif;
-}
-
-footer {
-    text-align: center;
-    position: absolute;
-    left: 0;
-    bottom: 0;
 }
 
 .center {
@@ -31,14 +29,25 @@ footer {
 
 .column {
     float: left;
-    width: 33.33%;
+    width: 32%;
+    height: 300px;
+    border-width:1.5px;
+    border-style:dotted; 
+    border-color: purple;
+    border-radius: 20px;
+}
+
+.row{
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
 }
 
 .row:after {
     content: "";
     display: table;
     clear: both;
-}
+  }
 
 @media screen and (max-width: 600px) {
     .column {
